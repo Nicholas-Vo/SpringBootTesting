@@ -22,7 +22,7 @@ SpringBootApplication is a convenience annotation that adds the following:
     com/example package, letting it find the controllers.
  */
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"controller", "service", "model", "repository"})
 public class SpringTestingApplication {
 
     public static void main(String[] args) {
